@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="/css/enviImage.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Text from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="/js/modernizr.custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+</head>
+<body>
+
+<!-- NavBar -->
+    <nav  class="fixed-nav-bar">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse main-nav">
+          <a class="navbar-brand" href="index.html#wrap"><h4>ENVI</h4></a>
+          
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about"><h4>About</h4></a><span class="hover-li"></span></li>
+          <li><a href="#howTo"><h4>How To</h4></a><span class="hover-li"></span></li>
+          <li><a href="#starterKits"><h4>Starter Kits</h4></a><span class="hover-li"></span></li>
+          <li><a href="#contact"><h4>Contact</h4></a><span class="hover-li"></span></li>
+            <li><a class="navbar-brand" href="/php/authEnvi.php" data-toggle="modal" data-target="#login-modal"><h4>Sign In</h4></a><span class="hover-li"></span></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Image Gallery -->
+     <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Thumbnail Gallery</h1>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/car1.jpg">
+                    <img class="img-responsive" src="/img/car1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/car2.png">
+                    <img class="img-responsive" src="/img/car2.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/freedom.png">
+                    <img class="img-responsive" src="/img/freedom.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/bentley.png">
+                    <img class="img-responsive" src="/img/bentley.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/details.png">
+                    <img class="img-responsive" src="/img/details.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/enviTruck.jpg">
+                    <img class="img-responsive" src="/img/enviTruck.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/enviTruck2.png">
+                    <img class="img-responsive" src="/img/enviTruck2.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="/img/enviTruck3.png">
+                    <img class="img-responsive" src="/img/enviTruck3.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a id="thumbPicBorder" class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+        </div>
+
+        <hr>
+
+
+            <!-- Modal Begin -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Sign In to EVOQ</h1><br>
+                  <form>
+                    <input type="text" name="user" placeholder="Username">
+                    <input type="password" name="pass" placeholder="Password">
+                    <input type="submit" name="login" class="login loginmodal-submit">
+                  </form>
+                    
+                <div class="login-help">
+                    <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal End -->
+
+        <!-- JS for the smooth scroll -->
+        <script>
+            $('.smooth').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('body'),
+                    scrollTarget: '#' + this.id
+                });
+                
+                return false;
+            });
+        </script>
+
+</body>
+</html>
