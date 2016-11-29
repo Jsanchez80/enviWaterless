@@ -2,9 +2,6 @@
 The primary focus on this build will involve the use of MVC to build a site that allows users the experience they've come to know while creating a Client UX that allows for Content Management, Etc. 
 
 
-Schematic Diagram of Model, View, Controller (MVC) paradigm:
-![model view controller diagram](mvc-diagram.png)
-
 
 ##Project Tasks
 1. Buildout **views**.
